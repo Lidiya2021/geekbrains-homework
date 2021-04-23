@@ -14,19 +14,16 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
     border: 1px solid #ececec
     background-color: #ffffff
-
-.header-flex
-    display: flex
-    justify-content: space-between
-    height: 100%
-
-.header-left
-    display: flex
-    align-items: center
-
-.header-right
-    display: flex
-    align-items: center
+    &-flex
+        display: flex
+        justify-content: space-between
+        height: 100%
+    &-left
+        display: flex
+        align-items: center
+    &-right
+        display: flex
+        align-items: center
 
 .logo
     display: flex
@@ -39,12 +36,11 @@
     background-color: #f16d7f
     border: 1px solid transparent
     margin-left: 45px
-
-.button-site:hover
-    background-color: #fff
-    color: #f16d7f
-    border: 1px solid #f16d7f
-
+    &:hover
+        background-color: #fff
+        color: #f16d7f
+        border: 1px solid #f16d7f
+ 
 .my-acc
     color: #ffffff
     position: relative
@@ -73,23 +69,29 @@
     display: flex
     list-style-type: none
     justify-content: center
-
-.menu-link
-    text-decoration: none
-    display: block
-    padding: 20px 25px
-    color: #222222
-    font-size: 14px
-    font-weight: 700
-    text-transform: uppercase
-
+    &-link
+        text-decoration: none
+        display: block
+        padding: 20px 25px
+        color: #222222
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        &:hover
+            text-decoration: underline
+            transform: scale(1.2)
+                   
 .banner
     height: 613px
     background-color: #e8e8e8
-
-.banner-block
-    height: 100%
-    background: url(img/banner.jpg) 0 -51px
+    &-block
+        height: 100%
+        background: url(img/banner.jpg) 0 -51px
+    &-text
+        margin-top: 224px
+        border-left: 12px solid #f16d7f
+        float: left
+        padding-left: 12px
 
 .the-brand
     color: #222222
@@ -106,12 +108,6 @@
     text-transform: uppercase
     line-height: 31px
 
-.banner-text
-    margin-top: 224px
-    border-left: 12px solid #f16d7f
-    float: left
-    padding-left: 12px
-
 .span-fashion
     color: #f16d7f
 
@@ -120,26 +116,25 @@
     width: 263px
     margin-bottom: 40px
 
-.item:hover .box-add
+.item:hover .box-add 
     display: flex
+    transform: scale(1.2)
 
 .item:hover
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
-    position: relative
-    opacity: 1
     transform: scale(1.1)
-
+    
 .product-img
     width: 100%
 
-.item:hover .product-img
+.item:hover .product-img 
     filter: brightness(50%)
-
+       
 .product
     width: 263px
     display: block
     text-decoration: none
-    
+
 .box-product
     margin-top: 60px
     margin-bottom: 60px
@@ -163,14 +158,14 @@
     font-weight: 700
     text-transform: uppercase
 
-.box-add
+.box-add 
     position: absolute
     top: 98px
     display: none
     justify-content: center
     width: 100%
-
-.add
+    
+.add 
     border: 1px solid #ffffff
     padding: 8px 12px
     color: #ffffff
@@ -180,10 +175,10 @@
     display: flex
     align-items: center
 
-.add:hover
+.add:hover 
     box-shadow: 0 0 10px #fff
-
-.add-img
+ 
+.add-img 
     margin-right: 7px
 
 .container-news
@@ -289,11 +284,10 @@
     display: flex
     padding: 23px 18px
     border: transparent 1px solid
-
-.baplink:hover
-    background-color: #fff
-    color: #f16d7f
-    border: 1px solid #f16d7f
+    &:hover
+        background-color: #fff
+        color: #f16d7f
+        border: 1px solid #f16d7f
 
 .bran
     margin-left: 9px
@@ -304,7 +298,9 @@
     font-size: 27px
     font-weight: 300
     text-align: center
-
+    &:hover
+        transform: scale(1.1)
+        
 .logo
     text-decoration: none
 
@@ -315,7 +311,7 @@
     color: #f16d7f
     font-size: 27px
     font-weight: 900
-    text-align: center
+    text-align: center  
 
 .form-search
     padding-left: 18px
@@ -328,6 +324,7 @@
     background-color: #ffffff
     width: 277px
     height: 38px
+    outline: none
 
 .header-form button
     margin-top: 13px
@@ -393,12 +390,15 @@
     padding-bottom: 190px
     width: 293px
     height: 78px
-
+    &:hover
+        transform: scale(1.1)
+        transition-duration: 850ms
+    
 .bbtxt h1
     font-family: 'Lato', sans-serif
     color: #ffffff
     font-size: 54px
-    font-weight: 700
+    font-weight: 700   
 
 .bbtxt span
     font-family: 'Lato', sans-serif
@@ -423,6 +423,19 @@
     padding-bottom: 70px
     width: 105px
     height: 100%
+
+.auto:hover
+    transform: translate(150px,0)
+    transition-duration: 2s 
+    transition: ease-in-out
+
+.discount:hover
+    transform: rotate(360deg)
+    transition-duration: 850ms
+    transition-timing-function: ease-out
+
+.quality:hover
+    transform: scale(1.2)
 
 .bb-right
     display: flex
@@ -455,14 +468,13 @@
     justify-content: center
     position: relative
     background-size: cover
-
-.comunity-conteiner
-    width: 1140px
-    height: 100%
-    display: flex
-    position: absolute
-    flex-direction: row
-    justify-content: space-between
+    &-conteiner
+        width: 1140px
+        height: 100%
+        display: flex
+        position: absolute
+        flex-direction: row
+        justify-content: space-between
 
 .com-left
     width: 500px
@@ -613,7 +625,6 @@
     display: flex
     width: 100%
     height: 51px
-   
 
 .footer-logotext p
     margin-left: 12px
@@ -653,9 +664,8 @@
 
 .footer-company
     margin-left: 6px
-
-.footer-information
-    margin-left: 39px
+    &-information
+        margin-left: 39px
 
 .container-foote h3
     font-family: 'Lato', sans-serif
@@ -684,23 +694,20 @@
     background-color: #e6e6e6
     width: 100%
     height: 79px
-
-.footer-copy
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin: 0 auto
-    width: 1140px
-    height: 100%
-
-.footer-soc
-    display: flex
-    justify-content: space-between
-    width: 191px
-
-.footer-soc i
-    color: #ffffff
-    font-size: 32px
+    &-copy
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 auto
+        width: 1140px
+        height: 100%
+    &-soc
+        display: flex
+        justify-content: space-between
+        width: 191px
+    &-soc i
+        color: #ffffff
+        font-size: 32px
 
 .copy p
     font-family: 'Lato', sans-serif
@@ -723,16 +730,14 @@
     border-radius: 5px
     top: 70px
     padding: 20px
-
-.menu-link-box-list
-    background-color: #ffffff
-    margin-right: 40px
-
-.menu-link-box-list:last-of-type
-    margin-right: 0
+    &-list
+        background-color: #ffffff
+        margin-right: 40px
+        &:last-of-type
+            margin-right: 0
 
 .menu-link-box-list h3
-    border-bottom: 1px solid #e8e8e8
+    border-bottom: 1px solid #634c4c
     text-transform: uppercase
     color: #232323
     font-size: 14px
@@ -751,17 +756,15 @@
     font-weight: 400
     line-height: 28px
     letter-spacing: 0.35px
-
-.menu-link-box-list a:hover
-    color: #f16d7f
+    &:hover
+        color: #f16d7f
 
 .menu-box-list-unit
     margin-top: 22px
-
-.menu-box-list-unit-img
-    position: relative
-    margin-top: 15px
-    margin-left: -20px
+    &-img
+        position: relative
+        margin-top: 15px
+        margin-left: -20px
 
 .menu-box-unittxt
     position: absolute
@@ -904,29 +907,25 @@
     text-transform: uppercase
     color: #f16d7f
     padding-top: 10px
-
-.arrivals:hover
-    color: #f16d7f
-    font-size: 30px
-    font-weight: 900
-
-.arrivals-flex
-    display: flex
-
-.arrivals-text
-    font-family: Lato
-    font-size: 14px
-    line-height: 20px
-    font-weight: 300
-    color: #636363
-    font-weight: 700
-    text-transform: uppercase
-    list-style-type: none
-
-.arrivals-text a:hover
-    color: #f16d7f
-    font-size: 20px
-    font-weight: 900
+    &:hover
+        color: #f16d7f
+        font-size: 30px
+        font-weight: 900
+    &-flex
+        display: flex
+    &-text
+        font-family: Lato
+        font-size: 14px
+        line-height: 20px
+        font-weight: 300
+        color: #636363
+        font-weight: 700
+        text-transform: uppercase
+        list-style-type: none
+        & a:hover
+            color: #f16d7f
+            font-size: 20px
+            font-weight: 900
 
 .container-card
     width: 1140px
@@ -941,7 +940,7 @@
     border: 1px solid #eaeaea
     display: flex
     justify-content: space-between
-
+    
 .img-card
     padding-left: 286px
 
@@ -966,7 +965,6 @@
     transform: rotate(45deg)
 
 .arrow-rite:after
-
     position: absolute
     top: 16px
     left: 16px
@@ -987,12 +985,9 @@
     background-color: #ffffff
     border: 1px solid #eaeaea
     margin: 0 auto
-
-.collection:hover
     position: relative
-    opacity: 1
-    transform: scale(1.1)
-
+    margin-top: -40px
+     
 .header-collection
     font-size: 14px
     line-height: 24px
@@ -1029,7 +1024,6 @@
     padding-left: 360px
 
 .text-description
-
     font-size: 14px
     line-height: 24px
     font-weight: 700
@@ -1048,7 +1042,9 @@
     width: 617px
     margin-left: 262px
     background-color: #ffffff
-    border-bottom: 1px solid #0a0909
+    border-bottom: 1px solid #dfd2d2 
+    &:hover
+        font-size: 30px
 
 .also
     text-align: center
@@ -1060,16 +1056,14 @@
     display: block
     padding-top: 119px
     padding-bottom: 72px
-
-.also:hover
-    font-size: 35px
-    color: #ef5b70
-
-.also-prodacts
-    width: 1140px
-    margin: 0 auto
-    display: flex
-    justify-content: space-between
+    &:hover
+        color: #ef5b70
+        transform: scale(1.1)
+    &-prodacts
+        width: 1140px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
 
 .figure img
     width: 100%
@@ -1089,22 +1083,19 @@
     height: 55px
     border: transparent 1px solid
     margin-top: 28px
-
-.baplink-box::before
-    content: url(img/cart-add.svg)
-    padding-top: 14px
-    padding-right: 14px
-    padding-left: 207px
-
-.baplink-box:hover
-    background-color: #fff
-    color: #f16d7f
-    border: 1px solid #f16d7f
-
-.baplink-box::before:hover
-    content: ""
-    color: #f16d7f
-    background-color: #fff
+    &::before
+        content: url(img/cart-add.svg)
+        padding-top: 14px
+        padding-right: 14px
+        padding-left: 207px
+    &:hover
+        background-color: #fff
+        color: #f16d7f
+        border: 1px solid #f16d7f
+    &::before:hover
+        content: ""
+        color: #f16d7f
+        background-color: #fff
 
 .form-group
     display: flex
@@ -1117,19 +1108,24 @@
     padding-right: 303px
     padding-top: 50px
 
+.size-box
+    margin-top: 15px
+    outline: none
+    width: 144px
+    height: 35px
+    background-color: #ffffff
+    border: 1px solid #eaeaea   
 
 .checkout-size
     margin-top: 89px
     margin-bottom: 89px
-
+    
 .size-det
     border-bottom: 1px solid gainsboro
 
-/* Убираем стандартный маркер Chrome */
-details summary::-webkit-details-marker
+details summary::marker
     display: none
 
-/* Убираем стандартный маркер Firefox */
 details > summary
     list-style: none
 
@@ -1143,18 +1139,19 @@ details > summary
     padding-top: 30px
     padding-bottom: 30px
     border-bottom: silver
+    &:hover
+        color: #f16d7f
+        font-size: 20px
 
 .block-sum
     outline: 0
     outline-offset: 0
 
-.details-text:hover
-    color: #f16d7f
-    font-size: 20px
-
-.flex 
+.flex
     display: flex
-
+    &-shopping
+        justify-content: space-between
+ 
 .register
     font-family: Lato
     font-size: 13px
@@ -1212,7 +1209,6 @@ details > summary
         border: 1px solid #eaeaea
         outline: 0
         outline-offset: 0
-           
 
 .cont
     width: 180px
@@ -1227,10 +1223,197 @@ details > summary
         outline: 0
         border: 1px solid #f16d7f
         color: #f16d7f
-         
-        
+
 .address
     padding-right: 80px
     padding-left: 300px
-    
 
+.text-shopping
+    font-family: Lato
+    font-size: 13px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: -0.015em
+    color: #222222
+
+.flex-shopping
+    display: flex
+    justify-content: space-between
+    margin-top: 90px
+    padding-bottom: 20px
+    border-bottom: 1px solid #eaeaea
+
+.text-shopping
+    font-family: Lato
+    font-size: 13px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    color: #222222
+
+.text-shopping-1
+    font-family: Lato
+    font-size: 13px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    color: #222222
+    padding-right: 350px
+
+.text-shop
+    font-family: Lato
+    font-size: 13px
+    line-height: 1.2
+    font-weight: 400
+    text-transform: uppercase
+    color: #222222
+    padding-bottom: 38px
+    &-mini
+        font-family: Lato
+        font-size: 13px
+        line-height: 20px
+        font-weight: 400
+        color: #575757
+
+.str-shopping
+    padding-top: 25px
+    display: flex
+    border-bottom: 1px solid #eaeaea
+
+.shoping-card
+    padding-right: 25px
+    padding-bottom: 25px
+
+.price-shop
+    padding-top: 30px
+    padding-left: 280px
+    &-subtotal
+        padding-top: 30px
+        padding-left: 100px
+
+.quantity
+    width: 54px
+    height: 30px
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    text-align: center
+    padding-top: 7px
+    margin-left: 100px
+    margin-right: 90px
+    margin-top: 20px
+
+.text-free
+    font-family: Lato
+    font-size: 13px
+    line-height: 20px
+    font-weight: 400
+    color: #656565
+    margin-top: 30px
+
+.actuon
+    padding-top: 18px
+    padding-left: 110px
+    &:hover
+        color:  #7777
+
+.flex-button
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+
+.adress
+    font-family: Lato
+    font-size: 16px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    color: #222222
+    padding-bottom: 22px
+    &-box
+        width: 355px
+        height: 45px
+        background-color: #ffffff
+        border: 1px solid #eaeaea
+        outline: none
+        margin-bottom: 20px
+
+.text-adress-box
+    font-family: Lato
+    font-size: 13px
+    line-height: 1.2
+    font-weight: 300
+    color: #b1b1b1
+
+.quote
+    font-family: Lato
+    font-size: 11px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    color: #4a4a4a
+    width: 100px
+    height: 35px
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    margin-bottom: 54px
+
+.coupon-text
+    font-family: Lato
+    font-size: 14px
+    line-height: 1.2
+    font-weight: 300
+    color: #000000
+    padding-top: 28px
+    padding-bottom: 24px
+
+.checkout
+    width: 360px
+    height: 214px
+    background-color: #f5f3f3
+
+.total-flex
+    display: flex
+    justify-content: space-between
+    width: 110px  
+    padding-left: 218px 
+    
+.total-text
+    font-family: Lato
+    font-size: 11px
+    line-height: 1.2
+    font-weight: 400
+    text-transform: uppercase
+    color: #4a4a4a
+    padding-top: 40px
+
+.total-flex-too
+    display: flex
+    justify-content: space-between
+    width: 180px  
+    padding-left: 153px 
+    padding-top: 14px
+
+.cont-card
+    font-family: Lato
+    font-size: 16px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    color: #ffffff
+    width: 273px
+    height: 50px
+    background-color: #f16d7f
+    margin-left: 44px
+    margin-bottom: 42px
+    margin-top: 12px
+    border: none
+    outline: none
+    &:hover
+        background-color: #ffffff
+        outline: 0
+        border: 1px solid #f16d7f
+        color: #f16d7f
+        
+
+        
