@@ -1,0 +1,495 @@
+*
+    margin: 0
+    padding: 0
+
+html, body 
+	height: 100%
+
+.wrapper 
+	height: 100%
+
+.content 
+	height: 100%
+
+.logo
+    width: 100%
+    height: 75px
+    background: #222222
+    &-center
+        width: 1140px
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+    &-rith
+        display: flex
+        justify-content: space-between
+        width: 111px
+        align-self: baseline
+        padding-top: 20px
+    &-left
+        display: flex
+        justify-content: space-between
+        width: 159px
+        align-self: baseline
+        padding-top: 20px
+
+.baner
+    background: #F1E4E6
+    display: flex
+    margin-bottom: 65px
+    &-header
+        height: 120px
+        margin-top: 290px
+        padding-left: 15px
+        border-left: 12px solid #F16D7F
+        &-brand
+            font-weight: 900
+            font-size: 48px
+            line-height: 58px
+            color: #222222
+            &-mini
+                font-weight: 500
+                font-size: 38px
+                line-height: 58px
+                color: #222222
+
+.product
+    width: 1140px
+    margin: 0 auto
+    margin-bottom: 96px
+    &-mini
+        font-size: 14px
+        line-height: 17px
+        color: #9F9F9F
+        text-align: center
+        padding-bottom: 48px
+        display: flex
+        justify-content: space-between
+
+.catalog
+    width: 1140px
+    margin: 0 auto
+    &-header
+        font-size: 30px
+        line-height: 36px
+        color: #222222
+        text-align: center
+        &-mini
+            font-size: 14px
+            line-height: 17px
+            color: #9F9F9F
+            text-align: center
+            padding-bottom: 48px
+        
+.item-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.item
+    width: 360px
+    height: 581px
+    background:  #F8F8F8
+    margin-bottom: 30px
+    position: relative
+    &-link
+        text-decoration: none
+    &-info
+        padding: 20px
+        &-header
+            font-size: 13px
+            line-height: 16px
+            color: #000000
+    &-text
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+        padding-top: 12px
+    &-price
+        font-size: 16px
+        line-height: 19px
+        color: #F16D7F
+        padding-top: 18px
+
+.box-add
+    position: absolute
+    top: 98px
+    display: none
+    justify-content: center
+    width: 100%
+
+.add
+    border: 1px solid #ffffffde
+    padding: 8px 12px
+    color: #ffffff
+    font-size: 13px
+    font-weight: 700
+    text-decoration: none
+    display: flex
+    align-items: center
+
+.add:hover
+    box-shadow: 0 0 10px #ffffff8f
+
+.add-img
+    margin-right: 7px
+
+.item:hover .item-link
+    filter: brightness(50%)
+
+.item:hover .box-add
+    display: flex
+    transform: scale(1.2)
+
+.item:hover
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+    transform: scale(1.1)
+
+.bap
+    display: flex
+    justify-content: center
+
+.baptxt
+    display: flex
+    margin-bottom: 113px
+
+.baptxt i
+    margin-left: 9px
+
+.baplink
+    background-color: #f16d7f
+    color: #ffffff
+    font-family: 'Lato', sans-serif
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 0.4px
+    align-items: center
+    flex-direction: row
+    text-decoration: none
+    display: flex
+    padding: 23px 18px
+    border: transparent 1px solid
+    &:hover
+        background-color: #fff
+        color: #f16d7f
+        border: 1px solid #f16d7f
+
+.container-product
+    width: 100%
+    background-color: #222224   
+    
+.comunity-product
+    width: 1140px
+    margin-top: 25px
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+
+.blosk
+    text-align: center
+    margin-top: 80px
+    margin-bottom: 100px
+    width: 1035px 
+    &-1
+        text-align: center
+        margin-top: 80px
+        margin-bottom: 100px
+        margin-right: 81px
+        margin-left: 81px
+        width: 1035px       
+
+.comunity-product-header
+    font-family: Lato
+    font-size: 20px
+    font-weight: 700
+    line-height: 0.025 em
+    color: #fbfbfb
+    padding-top: 32px
+
+.comunity-product-text
+    font-family: Lato
+    font-size: 14px
+    line-height: 23px
+    font-weight: 300
+    letter-spacing: 0.025 em
+    color: #fbfbfb
+
+.flex-button-product
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+
+.faind-text
+    font-family: Lato
+    font-size: 16px
+    line-height: 26px
+    font-weight: 700
+    color: #c4c4c4
+
+.faindid-box
+    width: 261px
+    height: 44px
+    background-color: #ffffff
+    border: 1px solid #ebebeb
+    border-radius: 3px
+    text-align: center
+    padding-top: 15px
+
+.text-product
+    font-family: Lato
+    font-size: 14px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: #6f6e6e
+    padding-bottom: 25px 
+    &-trend
+        font-family: Lato
+        font-size: 14px
+        line-height: 26px
+        font-weight: 400
+        color: #6f6e6e
+        border-right: 2px solid  #dfdfdf
+        padding-left: 10px
+        padding-right: 10px
+        &:hover
+            color: #ef5b70
+            font-size: 16px
+    &-size
+        font-family: Lato
+        font-size: 14px
+        line-height: 26px
+        font-weight: 400
+        color: #6f6e6e
+        padding-left: 10px
+        padding-right: 10px
+
+.flex-product
+    display: flex
+
+.form-product
+    display: flex
+    justify-content: space-between
+    padding-bottom: 42px
+
+.middle
+    padding-left: 115px
+    padding-right: 115px
+  
+.comunity
+    height: 438px
+    display: flex
+    justify-content: center
+    position: relative
+    background-size: cover
+    &-conteiner
+        width: 1140px
+        height: 100%
+        display: flex
+        position: absolute
+        flex-direction: row
+        justify-content: space-between
+
+.com-left
+    width: 500px
+    display: flex
+    flex-direction: row
+    margin-top: 110px
+
+.com-left img
+    height: 83px
+
+.face:hover
+    transform: scale(1.4)
+    transition: 1s
+
+.com-lefttxt
+    width: 386px
+    height: 68px
+    color: #222224
+    font-family: 'Lato', sans-serif
+    font-size: 16px
+    font-style: italic
+    line-height: 26px
+    letter-spacing: 0.4px
+    margin-left: 28px
+    padding-top: 12px
+
+.com-lefttxts
+    position: absolute
+    top: 210px
+    left: 113px
+    color: #222224
+    font-family: 'Lato', sans-serif
+    font-size: 12px
+    font-weight: 300
+    letter-spacing: 0.3px
+    line-height: 14px
+
+.com-lefttxts b
+    color: #f16d7f
+    font-size: 16px
+    font-weight: 700
+    font-family: 'Lato', sans-serif
+    letter-spacing: 0.4px
+    line-height: 26px
+
+.com-center
+    height: 100%
+    width: 1px
+    background-color: white
+
+.com-rightform input
+    width: 310px
+    height: 45px
+    border-top-left-radius: 23px
+    border-bottom-left-radius: 23px
+    background-color: #e1e1e1
+    border: transparent 1px solid
+    padding-left: 18px
+    color: #222224
+    font-family: 'Lato', sans-serif
+    font-size: 14px
+    font-weight: 400
+    line-height: 54px
+    letter-spacing: 0.35px
+    box-sizing: border-box
+    border-right-width: 0
+
+.com-rightform button
+    width: 105px
+    height: 45px
+    border-radius: 0 23px 23px 0
+    background-color: #f16d7f
+    color: #ffffff
+    font-family: 'Lato', sans-serif
+    font-size: 14px
+    font-weight: 400
+    line-height: 35px
+    letter-spacing: 0.35px
+    box-sizing: border-box
+    border: #f16d7f 1px solid
+    border-left-width: 0
+    margin-left: -3px
+
+.com-right
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.com-righttxt
+    display: flex
+    width: 370px
+    justify-content: center
+    flex-direction: row
+    align-content: center
+    flex-wrap: wrap
+    margin-bottom: 35px
+    color: #222224
+    font-family: 'Lato', sans-serif
+    font-weight: 400
+    font-size: 24px
+    letter-spacing: 0.6px
+    line-height: 54px
+    text-transform: uppercase
+
+.com-righttxt span
+    color: #222224
+    font-family: 'Lato', sans-serif
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.35px
+    line-height: 24px
+
+.com-rightform input:focus, button:focus
+    outline: none
+
+.com-rightform button:active
+    background-color: white
+    color: #f16d7f
+
+.footer
+    background-color: #161313
+    width: 100%
+    height: 79px
+    &-copy
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 auto
+        width: 1140px
+        height: 100%
+    &-soc
+        display: flex
+        justify-content: space-between
+        width: 191px
+    &-soc i
+        color: #ffffff
+        font-size: 32px
+
+.copy p
+    font-family: 'Lato', sans-serif
+    color: #ffffff
+    font-size: 16px
+    font-weight: 400
+
+.footer-soc a:hover i
+    color: #f16d7f
+
+@media (max-width: 768px)
+    .logo-center
+        width: 700px
+        padding-left: 32px
+        padding-right: 32px
+    
+    
+
+        
+            
+            
+
+
+            
+
+        
+        
+
+        
+
+
+
+
+
+
+
+
+ 
+    
+        
+
+
+
+
+
+
+        
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
